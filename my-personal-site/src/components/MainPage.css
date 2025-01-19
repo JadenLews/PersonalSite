@@ -1,0 +1,32 @@
+/* Hero Section */
+.hero-content {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-text {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+  
+  /* Content Sections */
+  .content-section {
+    height: 100vh; /* Full viewport height */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-section:nth-child(even) {
+    background-color: #f8f9fa; /* Light gray for alternating sections */
+  }
+  
+  .content-section:nth-child(odd) {
+    background-color: white;
+  }

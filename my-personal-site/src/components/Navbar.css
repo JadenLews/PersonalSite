@@ -1,0 +1,26 @@
+/* Transparent Navbar (Behind Hero Section) */
+.navbar-transparent {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+  }
+  
+  /* Sticky Navbar (After Scrolling) */
+  .navbar-scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+  }

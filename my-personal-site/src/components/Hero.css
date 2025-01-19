@@ -1,0 +1,43 @@
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    position: absolute;
+    z-index: -1; /* Push the image behind the text */
+  }
+  
+  .hero-text {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 1; /* Ensure the text is above the image */
+  }
+  
+  /* Content Section Styling */
+  .content-section {
+    background-color: white;
+    padding: 50px;
+    margin-top: -50px; /* Slight overlap for the scrolling effect */
+    z-index: 2;
+  }
+  
+  .content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .content-section p {
+    line-height: 1.5;
+    color: #333;
+  }
