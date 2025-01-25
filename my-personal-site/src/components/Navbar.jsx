@@ -15,58 +15,99 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+// Fix dropdown for mobile
   return (
     <nav
-      className={`navbar navbar-expand-lg ${
-        scrolled ? "navbar-scrolled" : "navbar-transparent"
+      className={`navigation container-sm" ${
+        scrolled ? "navigation-scrolled" : "navigation-transparent"
       }`}
     >
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="about" smooth={true} duration={500}>
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="projects"
-                smooth={true}
-                duration={500}
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="resume" smooth={true} duration={500}>
-                Resume
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="contact" smooth={true} duration={500}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+      <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+  <div class="container">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-grow-1 justify-content-between">
+        <li class="nav-item dropdown">
+          {/* About Section */}
+          <li className="nav-item dropdown">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    About
+                  </Link>
+                </li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+        <li className="nav-item dropdown">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="projects"
+                    smooth={true}
+                    duration={500}
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Projects
+                  </Link>
+                </li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+        <li className="nav-item dropdown">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="resume"
+                    smooth={true}
+                    duration={500}
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Experience
+                  </Link>
+                </li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+        <li className="nav-item dropdown">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="contact"
+                    smooth={true}
+                    duration={500}
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Contact
+                  </Link>
+                </li>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
     </nav>
   );
 };

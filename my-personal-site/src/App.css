@@ -3,3 +3,8 @@
   margin: 0 auto;
   text-align: center;
 }
+
+.App {
+  background-color: rgb(198, 112, 6) !important;
+  z-index: 5;
+}
