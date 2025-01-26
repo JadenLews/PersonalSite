@@ -1,3 +1,6 @@
+.parallax-wrapper {
+  z-index: 100;
+}
 /* Hero Section */
 .hero-content {
     height: 60vh; /* Full viewport height */
@@ -31,8 +34,10 @@
   
   /* Content Sections */
 .content-section {
-  height: 100vh; /* Full viewport height for each section */
-  padding: 40px;
+  min-height: 500px;
+  padding: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,7 +92,7 @@
 .App {
   background-color: rgb(49, 49, 49) !important;
   padding-bottom: 10px;
-  z-index: 5;
+  z-index: -1;
 }
 
 
@@ -190,16 +195,15 @@
 
 
 
-/* Initial Hidden State */
+/* Hidden by Default */
 .fade {
-  opacity: 0; /* Start fully hidden */
-  transform: translateY(30px); /* Start slightly below original position */
-  transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth animation */
+  opacity: 0; /* Fully hidden */
+  transform: translateY(130px); /* Start further down for a more noticeable slide */
+  transition: opacity 1.5s ease-out, transform .8s ease-out !important; /* Smooth and longer animation */
 }
 
-/* Fade-In and Slide-Up Animation */
+/* Visible when Fading In */
 .fade-in {
-  opacity: 1; /* Fully visible */
-  transform: translateY(0); /* Back to normal position */
+  opacity: 1 !important; /* Fully visible */
+  transform: translateY(0); /* Slide to original position */
 }
-

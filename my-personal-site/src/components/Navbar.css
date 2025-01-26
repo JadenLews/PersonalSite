@@ -2,6 +2,8 @@
   width: 100vw;
   top: 0;
   color: white;
+  position: fixed; /* Ensure navbar stays on top */
+  z-index: 99;
 }
 /* Transparent Navbar (Behind Hero Section) */
 .navigation-transparent {
