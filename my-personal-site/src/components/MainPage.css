@@ -1,6 +1,9 @@
 .parallax-wrapper {
   z-index: 100;
 }
+.helo {
+  background-color: #2b2b2b;
+}
 /* Hero Section */
 .hero-content {
     height: 60vh; /* Full viewport height */
