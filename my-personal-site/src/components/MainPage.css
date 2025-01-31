@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap');
 .parallax-wrapper {
   z-index: 100;
 }
@@ -38,7 +39,7 @@
   /* Content Sections */
 .content-section {
   min-height: 500px;
-  padding: 10px;
+  padding: 0px;
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
@@ -49,7 +50,7 @@
   color: #f8f9fa; /* Light text for dark background */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   border-radius: 10px; /* Rounded corners for modern design */
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -60,20 +61,26 @@
   margin-bottom: 20px;
 }
 
-.content-section p {
-  font-size: 1.2rem;
-  color: #e0e0e0; /* Slightly lighter text for readability */
-  text-align: center;
-  max-width: 800px; /* Restrict width for better readability */
-  line-height: 1.6; /* Improve readability */
+/* Right Side */
+.about-right {
+  flex: 2;
+  min-width: 400px;
+  padding-left: 40px;
+  font-size: 1.3rem;
+  line-height: 1.8; /* Improve readability */
+}
+
+.about-right p {
+  margin: 0;
+  text-align: justify;
 }
 
 .content-section:nth-child(even) {
-  background-color: #2b2b2b; /* Slightly darker for alternating sections */
+  background-color: #181b1f; /* Slightly darker for alternating sections */
 }
 
 .content-section:nth-child(odd) {
-  background-color: #343a40; /* Matches navbar color */
+  background-color: #202328; /* Matches navbar color */
 }
 
 /* Links in Content Sections */
@@ -93,18 +100,10 @@
 }
 
 .App {
-  background-color: rgb(49, 49, 49) !important;
+  background-color: #272b30 !important;
   padding-bottom: 10px;
   z-index: -1;
 }
-
-
-
-
-
-
-
-
 
 /* About Section Styling */
 .about-section {
@@ -131,24 +130,34 @@
 .info-list {
   list-style: none;
   padding: 0;
+  margin-bottom: 20px; /* Add space before social links */
 }
 
+
 .info-list li {
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle separator line */
+  font-family: "Lora", serif; /* Modern alternative to Times New Roman */
 }
 
 .info-title {
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-right: 5px;
+  letter-spacing: 2px;
+  margin-right: 10px;
   color: #adb5bd; /* Subtle gray for titles */
+  font-family: "Source Code Pro", monospace; /* Modern alternative to Lucida Console */
+  font-size: 1.1rem;
 }
-
 .social-links {
   display: flex;
-  gap: 10px;
-  margin-top: 20px;
+  justify-content: center;
+  gap: 60px; /* More space between icons */
+  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .social-links a {
@@ -191,12 +200,8 @@
 
 .about-right p {
   margin: 0;
+  font-size: 10px;
 }
-
-
-
-
-
 
 /* Hidden by Default */
 .fade {
@@ -209,4 +214,197 @@
 .fade-in {
   opacity: 1 !important; /* Fully visible */
   transform: translateY(0); /* Slide to original position */
+}
+
+.content-section p {
+  font-size: 1rem;
+  color: #e0e0e0; /* Slightly lighter text for readability */
+  text-align: center;
+  max-width: 800px; /* Restrict width for better readability */
+  line-height: 1.6; /* Improve readability */
+}
+
+
+.timeline {
+  position: relative;
+  width: 89%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #aba8b9, #160f3e);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+.timeline-content {
+  background: #272b30;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin-left: 50px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid #3d3e41;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+.skills-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.skill {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #f8f9fa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease;
+}
+
+.skill:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+/* Resume Timeline - Flip the Line and Dots */
+.resume-timeline .timeline-line {
+  left: auto;
+  right: 20px; /* Moves the vertical line to the right */
+}
+
+.resume-timeline .timeline-dot {
+  left: auto;
+  right: 14px; /* Moves dots to the right */
+}
+
+.resume-timeline .timeline-content {
+  margin-left: 0;
+  margin-right: 50px; /* Pushes content away from the right line */
+  text-align: left; /* Align text to left for consistency */
+}
+
+/* General Timeline Styling */
+.timeline {
+  position: relative;
+  width: 89%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #aba8b9, #160f3e);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+.timeline-content {
+  background: #272b30;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid #3d3e41;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.skill {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #f8f9fa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease;
+}
+
+.skill:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
