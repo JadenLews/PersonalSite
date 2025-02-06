@@ -53,7 +53,9 @@ const MainPage = () => {
     <li><span className="info-title">HOMETOWN:</span> Deer Isle, Maine</li>
   </ul>
 
-  {/* Social Links (Outside of the UL) */}
+  {/* Social Links (Outside of the UL) sjfksfks jfk sdkfjskdjfksd
+  skfskfjsdkfjskfjksdjfksdjfksdfksdjkfsdjkfjsdkfjsdkf
+  sfksdjfksdjfkdsjfkjsdkfjsdkfjdsf*/}
   <div className="social-links">
     <a href="https://github.com/JadenLews" target="_blank" rel="noopener noreferrer">
       <i className="fab fa-github"></i>
