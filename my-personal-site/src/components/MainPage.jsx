@@ -89,57 +89,57 @@ const MainPage = () => {
 
       {/* Other Sections */}
       <section id="projects" className="content-section fade">
-      <div class="timeline-line"></div>
-      <h2 className="section-title">Projects</h2>
+  <h2 className="section-title">Projects</h2>
+  <div className="timeline projects-timeline">
+    <div className="timeline-line"></div>
 
-      <div className="timeline">
-        {/* Project 1 */}
-        <div className="timeline-item">
-        <div class="timeline-dot"></div>
-          <div className="timeline-content">
-            <h3>Stock Portfolio App</h3>
-            <p>A web-based stock tracking app using Django, React, and financial APIs.</p>
-            <div className="skills-list">
-              <span className="skill">Django</span>
-              <span className="skill">React</span>
-              <span className="skill">Financial APIs</span>
-              <span className="skill">Bootstrap</span>
-            </div>
-            <span className="date">2024</span>
-          </div>
+    {/* Project 1 */}
+    <div className="timeline-item">
+      <div className="timeline-dot"></div>
+      <div className="timeline-content">
+        <h3>Stock Portfolio App</h3>
+        <p>A web-based stock tracking app using Django, React, and financial APIs.</p>
+        <div className="skills-list">
+          <span className="skill">Django</span>
+          <span className="skill">React</span>
+          <span className="skill">Financial APIs</span>
+          <span className="skill">Bootstrap</span>
         </div>
-
-        {/* Project 2 */}
-        <div className="timeline-item">
-        <div class="timeline-dot"></div>
-          <div className="timeline-content">
-            <h3>P2P Payment System</h3>
-            <p>Developed an offline peer-to-peer digital payment system using cryptography.</p>
-            <div className="skills-list">
-              <span className="skill">Python</span>
-              <span className="skill">Cryptography</span>
-              <span className="skill">Networking</span>
-            </div>
-            <span className="date">2023</span>
-          </div>
-        </div>
-
-        {/* Project 3 */}
-        <div className="timeline-item">
-        <div class="timeline-dot"></div>
-          <div className="timeline-content">
-            <h3>2D Pool Simulator</h3>
-            <p>A physics-based 2D pool game built in Processing for realistic ball collisions.</p>
-            <div className="skills-list">
-              <span className="skill">Java</span>
-              <span className="skill">Processing</span>
-              <span className="skill">Physics Simulation</span>
-            </div>
-            <span className="date">2022</span>
-          </div>
-        </div>
+        <span className="date">2024</span>
       </div>
-    </section>
+    </div>
+
+    {/* Project 2 */}
+    <div className="timeline-item">
+      <div className="timeline-dot"></div>
+      <div className="timeline-content">
+        <h3>P2P Payment System</h3>
+        <p>Developed an offline peer-to-peer digital payment system using cryptography.</p>
+        <div className="skills-list">
+          <span className="skill">Python</span>
+          <span className="skill">Cryptography</span>
+          <span className="skill">Networking</span>
+        </div>
+        <span className="date">2023</span>
+      </div>
+    </div>
+
+    {/* Project 3 */}
+    <div className="timeline-item">
+      <div className="timeline-dot"></div>
+      <div className="timeline-content">
+        <h3>2D Pool Simulator</h3>
+        <p>A physics-based 2D pool game built in Processing for realistic ball collisions.</p>
+        <div className="skills-list">
+          <span className="skill">Java</span>
+          <span className="skill">Processing</span>
+          <span className="skill">Physics Simulation</span>
+        </div>
+        <span className="date">2022</span>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section id="resume" className="content-section fade">
   <h2 className="section-title">Resume</h2>
@@ -192,10 +192,44 @@ const MainPage = () => {
   </div>
 </section>
 
-      <section id="contact" className="content-section fade">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me for collaboration or opportunities!</p>
-      </section>
+<section id="contact" className="content-section fade contact-section">
+  <h2 className="section-title">Get in Touch</h2>
+  <p className="contact-text">
+    Feel free to reach out for collaboration, opportunities, or just to say hi!
+  </p>
+
+  <div className="contact-container">
+    {/* Contact Card */}
+    <div className="contact-card">
+      <h3>Let's Connect</h3>
+      <p>Email: <a href="mailto:jlewis@clarku.edu">jlewis@clarku.edu</a></p>
+      <p>Location: Worcester, MA</p>
+
+      <div className="social-links2">
+        <a href="https://github.com/JadenLews" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:jlewis@clarku.edu">
+          <i className="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    {/* Contact Form */}
+    <div className="contact-form">
+      <h3>Send a Message</h3>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
     </div>
   );
 };
