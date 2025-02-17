@@ -202,7 +202,7 @@ const MainPage = () => {
     {/* Contact Card */}
     <div className="contact-card">
       <h3>Let's Connect</h3>
-      <p>Email: <a href="mailto:jlewis@clarku.edu">jlewis@clarku.edu</a></p>
+      <p>Email: <a href="mailto:lewisjaden19@gmail.com">lewisjaden19@gmail.com</a></p>
       <p>Location: Worcester, MA</p>
 
       <div className="social-links2">
@@ -212,7 +212,7 @@ const MainPage = () => {
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i>
         </a>
-        <a href="mailto:jlewis@clarku.edu">
+        <a href="mailto:lewisjaden19@gmail.com">
           <i className="fas fa-envelope"></i>
         </a>
       </div>
