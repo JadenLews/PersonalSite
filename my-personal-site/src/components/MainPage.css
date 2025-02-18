@@ -1,102 +1,15 @@
+/* ------------------------ */
+/* GLOBAL SETTINGS & IMPORTS */
+/* ------------------------ */
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap');
-.parallax-wrapper {
-  z-index: 100;
-}
-.helo {
-  background-color: #2b2b2b;
-}
-/* Hero Section */
-.hero-content {
-    height: 60vh; /* Full viewport height */
-  }
 
-  .nametitle {
-    height: 60vh; /* Full viewport height */
-    display: flex;
-    align-content: flex-end;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: 5vw 10vw 0vw 0vw;
-  }
-
-  .abouttitle {
-    height: 50vh; /* Full viewport height */
-    display: flex;
-    align-content: flex-end;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin: 2vw 0vw 0vw 5vw;
-    margin-right: 10vw;
-  }
-  
-  .hero-text {
-    font-size: 3rem;
-    color: white;
-    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
-    text-align: center;
-  }
-  
-  /* Content Sections */
-.content-section {
-  min-height: 500px;
-  padding: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #343a40; /* Matches the navbar color */
-  color: #f8f9fa; /* Light text for dark background */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  border-radius: 10px; /* Rounded corners for modern design */
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.content-section h2 {
-  font-size: 2.5rem;
-  color: #f8f9fa; /* Light heading color */
-  margin-bottom: 20px;
-}
-
-/* Right Side */
-.about-right {
-  flex: 2;
-  min-width: 400px;
-  padding-left: 40px;
-  font-size: 1.3rem;
-  line-height: 1.8; /* Improve readability */
-}
-
-.about-right p {
+body {
   margin: 0;
-  text-align: justify;
-}
-
-.content-section:nth-child(even) {
-  background-color: #181b1f; /* Slightly darker for alternating sections */
-}
-
-.content-section:nth-child(odd) {
-  background-color: #202328; /* Matches navbar color */
-}
-
-/* Links in Content Sections */
-.content-section a {
-  color: #f8f9fa; /* Match navbar text */
-  text-decoration: none;
-  border-bottom: 1px solid #f8f9fa; /* Subtle underline effect */
-}
-
-.content-section a:hover {
-  color: #adb5bd; /* Slightly darker on hover */
-  border-bottom: 1px solid #adb5bd; /* Match hover color */
-}
-
-.contactsection {
-  height: 110vh;
+  padding: 0;
+  font-family: 'Lora', serif;
+  background-color: #272b30;
+  color: #f8f9fa;
 }
 
 .App {
@@ -105,11 +18,112 @@
   z-index: -1;
 }
 
-/* About Section Styling */
+
+/* ---------------- */
+/* HERO SECTION */
+/* ---------------- */
+
+.hero-content {
+  height: 60vh;
+}
+
+.nametitle {
+  height: 60vh;
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 5vw 10vw 0vw 0vw;
+}
+
+.abouttitle {
+  height: 50vh;
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 2vw 10vw 0vw 5vw;
+}
+
+.hero-text {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+
+
+/* ------------------- */
+/* CONTENT SECTIONS */
+/* ------------------- */
+
+.content-section {
+  min-height: 500px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #343a40;
+  color: #f8f9fa;
+
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  color: #f8f9fa;
+  margin-bottom: 20px;
+}
+
+/* Alternate Colors for Odd/Even Sections */
+.content-section:nth-child(even) {
+  background-color: #181b1f;
+}
+
+.content-section:nth-child(odd) {
+  background-color: #202328;
+}
+
+/* General Text in Content Sections */
+.content-section p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* Links Inside Content Sections */
+.content-section a {
+  color: #f8f9fa;
+  text-decoration: none;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.content-section a:hover {
+  color: #adb5bd;
+  border-bottom: 1px solid #adb5bd;
+}
+
+
+
+/* ------------------- */
+/* ABOUT SECTION LAYOUT */
+/* ------------------- */
+
 .about-section {
   padding: 50px 20px;
-  background-color: #343a40; /* Matches dark navbar */
-  color: #f8f9fa; /* Light text for readability */
+  background-color: #343a40;
+  color: #f8f9fa;
 }
 
 .about-container {
@@ -123,71 +137,8 @@
 .about-left {
   flex: 1;
   min-width: 300px;
-  border-right: 2px solid #f8f9fa; /* Vertical line between left and right */
+  border-right: 2px solid #f8f9fa;
   padding-right: 20px;
-}
-
-.info-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 20px; /* Add space before social links */
-}
-
-
-.info-list li {
-  display: flex;
-  align-items: center;
-  padding: 12px 0;
-  font-size: 1.1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle separator line */
-  font-family: "Lora", serif; /* Modern alternative to Times New Roman */
-}
-
-.info-title {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-right: 10px;
-  color: #adb5bd; /* Subtle gray for titles */
-  font-family: "Source Code Pro", monospace; /* Modern alternative to Lucida Console */
-  font-size: 1.1rem;
-}
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 90px; /* More space between icons */
-  padding-top: 15px;
-  margin-top: 15px;
-}
-
-.social-links a {
-  font-size: 1.7rem;
-  color: #f8f9fa;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #adb5bd;
-}
-
-.resume-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: transparent;
-  border: 2px solid #f8f9fa;
-  border-radius: 5px;
-  color: #f8f9fa;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  text-decoration: none;
-}
-
-.resume-btn:hover {
-  background-color: #f8f9fa;
-  color: #343a40; /* Dark text on hover */
 }
 
 .about-right {
@@ -196,34 +147,75 @@
   padding-left: 20px;
   font-size: 1.2rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .about-right p {
   margin: 0;
-  font-size: 10px;
-}
-
-/* Hidden by Default */
-.fade {
-  opacity: 0; /* Fully hidden */
-  transform: translateY(130px); /* Start further down for a more noticeable slide */
-  transition: opacity 1.5s ease-out, transform .8s ease-out !important; /* Smooth and longer animation */
-}
-
-/* Visible when Fading In */
-.fade-in {
-  opacity: 1 !important; /* Fully visible */
-  transform: translateY(0); /* Slide to original position */
-}
-
-.content-section p {
   font-size: 1rem;
-  color: #e0e0e0; /* Slightly lighter text for readability */
-  text-align: center;
-  max-width: 800px; /* Restrict width for better readability */
-  line-height: 1.6; /* Improve readability */
 }
 
+
+
+/* ------------------------ */
+/* ABOUT SECTION – INFO LIST */
+/* ------------------------ */
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px; /* Space before social links */
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Lora", serif;
+}
+
+.info-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  color: #adb5bd;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.1rem;
+}
+
+/* ------------------------------- */
+/* SOCIAL LINKS (Under Info Section) */
+/* ------------------------------- */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.social-links a {
+  font-size: 2rem;
+  color: #f8f9fa;
+  opacity: 0.8;
+  transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #adb5bd;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+
+
+/* ------------------- */
+/* TIMELINE (Projects + Resume) */
+/* ------------------- */
 
 .timeline {
   position: relative;
@@ -277,114 +269,6 @@
   transform: translateY(-5px);
 }
 
-.skills-list {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-
-.skill {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #f8f9fa;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: background 0.3s ease;
-}
-
-.skill:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.fade {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-
-
-
-
-
-
-
-
-/* Resume Timeline - Flip the Line and Dots */
-.resume-timeline .timeline-line {
-  left: auto;
-  right: 20px; /* Moves the vertical line to the right */
-}
-
-.resume-timeline .timeline-dot {
-  left: auto;
-  right: 14px; /* Moves dots to the right */
-}
-
-.resume-timeline .timeline-content {
-  margin-left: 0;
-  margin-right: 50px; /* Pushes content away from the right line */
-  text-align: left; /* Align text to left for consistency */
-}
-
-/* General Timeline Styling */
-.timeline {
-  position: relative;
-  width: 89%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.timeline-line {
-  position: absolute;
-  width: 3px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
-}
-
-.timeline-item {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.timeline-dot {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(135deg, #aba8b9, #160f3e);
-  border-radius: 50%;
-  transform: translateY(-50%);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
-}
-
-.timeline-content {
-  background: #272b30;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  width: 90%;
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease-in-out;
-  border: 1px solid #3d3e41;
-}
-
-.timeline-content:hover {
-  transform: translateY(-5px);
-}
-
 /* Skills List */
 .skills-list {
   display: flex;
@@ -409,21 +293,88 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
+/* Resume Timeline - Flip the Line and Dots */
+.resume-timeline .timeline-line {
+  left: auto;
+  right: 20px; /* Moves the vertical line to the right */
+}
+
+.resume-timeline .timeline-dot {
+  left: auto;
+  right: 14px; /* Moves dots to the right */
+}
+
+.resume-timeline .timeline-content {
+  margin-left: 0;
+  margin-right: 50px; /* Pushes content away from the right line */
+  text-align: left; /* Align text to left for consistency */
+}
 
 
+/* ------------------- */
+/* EXTRA SECTIONS / CONTACT & BUTTONS */
+/* ------------------- */
 
+/* Parallax Wrapper (keep this as you highlighted it) */
+.parallax-wrapper {
+  z-index: 100;
+}
 
+.helo {
+  background-color: #2b2b2b;
+}
 
+/* Adjust Contact Section Height */
+.contactsection {
+  height: 110vh;
+}
 
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #f8f9fa;
+  border-radius: 5px;
+  color: #f8f9fa;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
 
+.resume-btn:hover {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
 
+/* Section Divider (Optional Visual Break Line) */
+.section-divider {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 40px auto;
+  width: 60%;
+}
 
-/* Contact Section */
+/* Contact Section Styling */
 .contact-section {
   padding: 60px 20px;
   text-align: center;
   background: linear-gradient(135deg, #1a1d23, #252932);
   color: #f8f9fa;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #8e9eab, #eef2f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-text {
@@ -432,7 +383,7 @@
   opacity: 0.8;
 }
 
-/* Contact Layout */
+/* Contact Container Layout */
 .contact-container {
   display: flex;
   justify-content: center;
@@ -443,7 +394,7 @@
   margin: auto;
 }
 
-/* Contact Card */
+/* Contact Cards */
 .contact-card {
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
@@ -451,6 +402,7 @@
   backdrop-filter: blur(10px);
   width: 300px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-card h3 {
@@ -473,22 +425,12 @@
   color: #adb5bd;
 }
 
-/* Social Links */
-.social-links2 {
-  display: flex;
-  justify-content: start;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.social-links2 a {
-  font-size: 1.5rem;
-  color: #f8f9fa;
-  transition: color 0.3s ease;
-}
-
-.social-links2 a:hover {
-  color: #adb5bd;
+/* Card Hover Effect */
+.contact-card:hover,
+.contact-form:hover {
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.6s ease;
 }
 
 /* Contact Form */
@@ -543,6 +485,34 @@
   background: #676c71;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* Social Links */
+.social-links2 {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-links2 a {
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  transition: color 0.3s ease;
+}
+
+.social-links2 a:hover {
+  color: #adb5bd;
+}
+
 .social-links2 {
   display: flex;
   justify-content: center;
@@ -562,11 +532,15 @@
   transform: scale(1.2); /* Slight zoom effect on hover */
 }
 
-.social-links a:hover {
-  color: #adb5bd;
-  transform: scale(1.2); /* Slight zoom effect on hover */
+/* Hidden by Default */
+.fade {
+  opacity: 0; /* Fully hidden */
+  transform: translateY(80px); /* Start further down for a more noticeable slide */
+  transition: opacity 1.5s ease-out, transform .8s ease-out !important; /* Smooth and longer animation */
 }
 
-.social-links a {
-  transition: transform 0.3s ease, color 0.3s ease;
+/* Visible when Fading In */
+.fade-in {
+  opacity: 1 !important; /* Fully visible */
+  transform: translateY(0); /* Slide to original position */
 }
