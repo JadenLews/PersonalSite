@@ -2,12 +2,12 @@
 /* GLOBAL SETTINGS & IMPORTS */
 /* ------------------------ */
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   background-color: #272b30;
   color: #f8f9fa;
 }
@@ -18,9 +18,8 @@ body {
   z-index: -1;
 }
 
-
 /* ---------------- */
-/* HERO SECTION */
+/* HERO SECTION sfsdfsdfsdfsdfds*/
 /* ---------------- */
 
 .hero-content {
@@ -51,8 +50,6 @@ body {
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
   text-align: center;
 }
-
-
 
 /* ------------------- */
 /* CONTENT SECTIONS */
@@ -114,8 +111,6 @@ body {
   border-bottom: 1px solid #adb5bd;
 }
 
-
-
 /* ------------------- */
 /* ABOUT SECTION LAYOUT */
 /* ------------------- */
@@ -154,8 +149,6 @@ body {
   margin: 0;
   font-size: 1rem;
 }
-
-
 
 /* ------------------------ */
 /* ABOUT SECTION – INFO LIST */
@@ -210,8 +203,6 @@ body {
   transform: scale(1.2);
   opacity: 1;
 }
-
-
 
 /* ------------------- */
 /* TIMELINE (Projects + Resume) */
@@ -309,7 +300,6 @@ body {
   margin-right: 50px; /* Pushes content away from the right line */
   text-align: left; /* Align text to left for consistency */
 }
-
 
 /* ------------------- */
 /* EXTRA SECTIONS / CONTACT & BUTTONS */
@@ -485,16 +475,6 @@ body {
   background: #676c71;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Social Links */
 .social-links2 {
   display: flex;
@@ -535,8 +515,10 @@ body {
 /* Hidden by Default */
 .fade {
   opacity: 0; /* Fully hidden */
-  transform: translateY(80px); /* Start further down for a more noticeable slide */
-  transition: opacity 1.5s ease-out, transform .8s ease-out !important; /* Smooth and longer animation */
+  transform: translateY(
+    80px
+  ); /* Start further down for a more noticeable slide */
+  transition: opacity 1.5s ease-out, transform 0.8s ease-out !important; /* Smooth and longer animation */
 }
 
 /* Visible when Fading In */
